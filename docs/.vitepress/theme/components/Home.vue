@@ -1,26 +1,14 @@
-<script setup lang="ts">
-import { getTopicData } from '../data'
-import TopicContainer from './Topic/HomeItem.vue'
-import Cate from './Header.vue'
-import PageContainer from './PageContainer.vue'
-
-const TopicData = getTopicData()
+<!-- this is home index -->
+<script setup lang='ts'>
+import Me from './me/index.vue'
+import PageContainer from './container.vue'
 </script>
 
 <template>
   <page-container>
-    <cate title="guide">
-      <topic-container
-        v-for="(topic, i) of TopicData" :key="i" text="24px"
-        :style="{ color: topic.color.text, background: topic.color.bg }"
-        :name="topic.name" :link="topic.path"
-      />
-    </cate>
+    <me />
   </page-container>
 </template>
 
-<style scoped>
-.container {
-  max-width: calc(var(--vp-layout-max-width) - 64px);
-}
+<style scoped lang='scss'>
 </style>

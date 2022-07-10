@@ -3,7 +3,7 @@ import type { Leetcode, Topic } from '../../../../types'
 import TopicData from '../../../../data/topic.json'
 // import data
 import LeetcodeData from '../../../../data/topic/leetcode.json'
-import NavData from './nav'
+// import NavData from './nav'
 
 export const TOPIC_PATH_PREFIX = '/Topic'
 
@@ -17,12 +17,11 @@ export function getTopicData(): Topic[] {
     },
   }))
 }
-
 export function getNav(): DefaultTheme.NavItem[] {
   return [...TopicData.map(t => ({
     text: t.display_name,
     link: `${TOPIC_PATH_PREFIX}${t.home_page}`,
-  })), ...NavData]
+  }))]
 }
 
 const mapping: Record<string, any> = {

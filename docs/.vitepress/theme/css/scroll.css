@@ -16,3 +16,6 @@
 .dark *::-webkit-scrollbar-thumb{
    background-color: rgb(104, 104, 104);
 }
+body{
+  scroll-behavior: smooth;
+}

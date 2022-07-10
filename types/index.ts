@@ -15,3 +15,4 @@ export interface Leetcode {
   cate: string
   origin: string
 }
+

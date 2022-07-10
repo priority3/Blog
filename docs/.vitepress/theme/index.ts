@@ -5,4 +5,5 @@ import './css/index.css'
 
 export default {
   ...DefaultTheme,
+  NotFound: () => 'custom 404',
 }
